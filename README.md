@@ -20,12 +20,25 @@ Deleting the contents of the store directory ./fabbond/hfc-key-store
 
 3.queryAllBonds:
 
-`node query.js`
+`node queryAllBonds.js`
 
 4.createBond:
 
-`node invoke.js`
+`node createBond.js`
 
 5.queryBond:
 
-`node query2.js`
+`node queryBond.js`
+
+
+7.moveBond:
+
+`node moveBond.js`
+
+8.query A number of bonds:
+
+`node queryANumber.js`
+
+9.query B number of bonds:
+
+`node queryBNumber.js`
