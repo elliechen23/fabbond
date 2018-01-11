@@ -60,9 +60,9 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 	// must send the proposal to endorsing peers
 	var request = {
 		//targets: let default to the peer assigned to the client
-		chaincodeId: 'bondtranfer',
+		chaincodeId: 'bondtransfer',
 		fcn: 'move',
-		args: ['a', 'b', '10'],
+		args: ['c', 'd', '50'],
 		chainId: 'mychannel',
 		txId: tx_id
 	};
