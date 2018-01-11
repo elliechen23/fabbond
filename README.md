@@ -1,10 +1,14 @@
 # fabbond
 
+**Terminal 1 - Start the network
+
 `docker rm -f $(docker ps -aq)`
 
 `npm install`
 
 `./startFabric.sh`
+
+**Terminal 2 - Start the fabric-ca and enroll Admin and user1
 
 Deleting the contents of the store directory ./fabbond/hfc-key-store
 
@@ -18,27 +22,28 @@ Deleting the contents of the store directory ./fabbond/hfc-key-store
 
 `node registerUser.js`
 
-3.queryAllBonds:
+**Terminal 3 - client app call chaincode
+
+1.queryAllBonds:
 
 `node queryAllBonds.js`
 
-4.createBond:
+2.createBond:
 
 `node createBond.js`
 
-5.queryBond:
+3.queryBond:
 
 `node queryBond.js`
 
-
-7.moveBond:
+4.moveBond:
 
 `node moveBond.js`
 
-8.query A number of bonds:
+5.query user1 number of bonds:
 
-`node queryANumber.js`
+`node queryNumber1.js`
 
-9.query B number of bonds:
+6.query user2 number of bonds:
 
-`node queryBNumber.js`
+`node queryNumber2.js`
